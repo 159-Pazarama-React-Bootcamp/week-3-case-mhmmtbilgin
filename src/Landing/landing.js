@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./index.css";
-import LandingImg from "../../assets/img/landing.svg";
+import LandingImg from "../assets/img/landing.svg";
 import { Link } from "react-router-dom";
 
 export default class Landing extends Component {

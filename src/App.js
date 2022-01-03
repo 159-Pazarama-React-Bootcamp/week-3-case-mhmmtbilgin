@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
-import Landing from "./components/Landing/index";
+import Landing from "./Landing/landing";
+import Login from "./Login/login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Landing />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
         </BrowserRouter>
       </header>
