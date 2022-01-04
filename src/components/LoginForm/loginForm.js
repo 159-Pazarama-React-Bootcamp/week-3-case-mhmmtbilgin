@@ -6,6 +6,7 @@ import SocialButton from "../SocialButton/socialButton";
 import Google from "../../assets/icons/google-icon.svg";
 import Facebook from "../../assets/icons/facebook-icon.svg";
 import Github from "../../assets/icons/github-icon.svg";
+import { Link } from "react-router-dom";
 
 export default class loginForm extends Component {
   render() {
@@ -21,27 +22,29 @@ export default class loginForm extends Component {
     return (
       <div className="login-content">
         <div className="login-form">
-          <span className="login-form__title">Login</span>
+          <span className="login-form__title">Giriş</span>
           <Field label="Email" type="text" placeholder="username@gmail.com" />
 
           <Field
-            label="Password"
+            label="Şifre"
             type="password"
-            placeholder="Password"
-            labelBottom="Forgot Password?"
+            placeholder="Şifre"
+            labelBottom="Şifremi Unuttum?"
           />
 
-          <Button buttonName="Sign In" />
+          <Button buttonName="Giriş Yap" />
 
-          <p className="login__or">or continue with</p>
+          <p className="login__or">ya da </p>
           <div className="login__social-btn">
             <SocialButton buttonStyle={googleStyle} />
             <SocialButton buttonStyle={githubStyle} />
             <SocialButton buttonStyle={facebookStyle} />
           </div>
           <div className="login__footer">
-            <p className="login__dont">Don’t have an account yet?</p>
-            <p className="login__register">Register for free </p>
+            <p className="login__dont">Hesabınız yok mu?</p>
+            <Link className="login__register" to={"/register"}>
+              <p>Ücretsiz Kaydolun.</p>
+            </Link>
           </div>
         </div>
         <div className="login__image">

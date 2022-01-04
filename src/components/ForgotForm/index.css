@@ -1,9 +1,9 @@
-.login-content{
+.forgot-password-content{
     display: flex;
     flex-direction: row;
     height: 100%;
 }
-.login-form{
+.forgot-password-form{
    display: flex;
    flex-direction: column;
    align-items: flex-start;
@@ -11,14 +11,14 @@
    padding: 38px 80px;
 
 }
-.login-form__title{
+.forgot-password-form__title{
     font-family: Poppins;
     font-weight: bold;
     font-size: 26px;
     line-height: 46px;
     margin-bottom: 18px;
 }
-.login__or{
+.forgot-password__or{
     width: 100%;
     font-family: Poppins;
     font-size: 10px;
@@ -26,27 +26,27 @@
     text-align: center;
     color: #798995;
 }
-.login__social-btn{
+.forgot-password__social-btn{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
-.login__footer{
+.forgot-password__footer{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
 
 }
-.login__dont{
+.forgot-password__dont{
     font-family: Poppins;
     font-size: 10px;
     line-height: 16px;
     color: #BCBEC0;
     margin-right: 5px;   
 }
-.login__register{
+.forgot-password__register{
     font-family: Poppins;
     font-weight: 600;
     font-size: 10px;
@@ -56,12 +56,12 @@
     text-decoration: none;
  
 }
-.login__image{
+.forgot-password__image{
     width: 100%;
     height: 100%;
    
 }
-.login__login-image{
+.forgot-password__forgot-image{
     width: 100%;
     height: 100%;
     background: url('../../assets/img/avatar_makata_vespa_04_2.svg');
