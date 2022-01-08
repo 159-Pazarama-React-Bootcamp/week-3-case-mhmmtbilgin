@@ -8,10 +8,12 @@ export default class button extends Component {
   }
 
   render() {
-    const { buttonName } = this.props;
+    const { buttonName, onClick } = this.props;
     return (
       <div className="form-btn">
-        <button className="form-btn__button">{buttonName}</button>
+        <button onClick={onClick} className="form-btn__button">
+          {buttonName}
+        </button>
       </div>
     );
   }
